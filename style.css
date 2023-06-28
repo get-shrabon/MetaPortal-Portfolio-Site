@@ -347,6 +347,7 @@ padding: 20px;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
+    max-width: 1440px;
 }
 
 .legend-img-1 {
