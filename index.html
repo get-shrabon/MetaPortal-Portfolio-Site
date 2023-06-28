@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mega Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark  p-2 pt-3">
+            <div class="container-fluid nav">
+                <div class="d-flex gap-4 left">
+                    <button class="navbar-toggler nav-btn " type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Contact Now</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active " aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle " href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item " href="#">Action</a></li>
+                                        <li><a class="dropdown-item " href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item " href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="d-flex gap-5 nav-social mt-5">
+                                <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                                <a href="#"><i class="fa-brands fa-pinterest fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="brand" href="#">Meta <br> Portal</a>
+
+                </div>
+                <div class=" nav-middle">
+                    <a class="creative_link" href="#">Home</a>
+                    <a class="creative_link" href="#">About</a>
+                    <a class="creative_link" href="#">Collection</a>
+                    <a class="creative_link" href="#">Blog</a>
+                    <a class="creative_link" href="#">Contact</a>
+                </div>
+                <div class="right">
+                    <button class="navbar-toggler wallet-btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        Connect To Wallet
+                    </button>
+                    <div class="offcanvas offcanvas-end text-center" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Connect Wallet</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <p>Connect with one of our available wallet providers or create a new one.</p>
+                                </li>
+                                <a class="nav-item metamask" href="#">
+                                    <img class="rounded-circle metamask-logo" src="imges/metamask.png" alt=""
+                                        width="80px" height="80px">
+                                    <p class="mt-3 text-white">METAMASK</p>
+                                </a>
+                                <a class="nav-item metamask mt-5" href="#">
+                                    <img class="rounded-circle metamask-logo" src="imges/coinbase.png" alt=""
+                                        width="80px" height="80px">
+                                    <p class="mt-3 text-white">COINBASE</p>
+                                </a>
+                                <a class="nav-item metamask mt-5" href="#">
+                                    <img class="rounded-circle metamask-logo" src="imges/walletconnect.png" alt=""
+                                        width="80px" height="80px">
+                                    <p class="mt-3 text-white">WALLETCONNET</p>
+                                </a>
+                                <a class="nav-item metamask mt-5" href="#">
+                                    <img class="rounded-circle metamask-logo" src="imges/venly.png" alt="" width="80px"
+                                        height="80px">
+                                    <p class="mt-3 text-white">VENLY</p>
+                                </a>
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Benner Section Here -->
+        <section class="container mb-5">
+            <h1 class="text-center text-white fs-1 fw-bold banner-title">Meta Legend</h1>
+            <div class="banner-container ">
+                <div class="swiper banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="imges/Collection-img/1.png" />
+                        </div>
+                        <div class="swiper-slide ms-3">
+                            <img src="imges/Collection-img/2.png" />
+                        </div>
+                        <div class="swiper-slide ms-3">
+                            <img src="imges/Collection-img/3.png" />
+                        </div>
+                        <div class="swiper-slide ms-3">
+                            <img src="imges/Collection-img/4.png" />
+                        </div>
+                        <div class="swiper-slide ms-3">
+                            <img src="imges/Collection-img/5.png" />
+                        </div>
+                        <div class="swiper-slide ms-3">
+                            <img src="imges/Collection-img/6.png" />
+                        </div>
+                        <div class="swiper-slide ms-3">
+                            <img src="imges/Collection-img/7.png" />
+                        </div>
+                        <div class="swiper-slide ms-3">
+                            <img src="imges/Collection-img/8.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imges/Collection-img/1.png" />
+                        </div>
+                        <div class="swiper-slide ms-3">
+                            <img src="imges/Collection-img/2.png" />
+                        </div>
+                        <div class="swiper-slide ms-3">
+                            <img src="imges/Collection-img/3.png" />
+                        </div>
+                        <div class="swiper-slide ms-3">
+                            <img src="imges/Collection-img/4.png" />
+                        </div>
+                        <div class="swiper-slide ms-3">
+                            <img src="imges/Collection-img/5.png" />
+                        </div>
+                        <div class="swiper-slide ms-3">
+                            <img src="imges/Collection-img/6.png" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <p class="fs-5 text-center mt-5 pt-5">Meta Legends represent a collection of 17,000 legends categorized by
+                level of <br> rarity and generated with hundreds of elements. The Legends are stored as ERC <br>-721
+                tokens on the Ethereum blockchain and hosted on IPFS.</p>
+            <div class="text-center mt-5">
+                <button type="button" class="banner-btn">BUY ON OPENSEA</button>
+            </div>
+        </section>
+        <!-- Benner Section End -->
+
+        <!-- Users Detail Section Here -->
+        <section class="users-container">
+            <div class="row container ms-auto me-auto">
+                <div class="col ">
+                    <p class="number counter">9999</p>
+                    <p>Total Items</p>
+                </div>
+                <div class="col divider">
+                    <p class="number counter">3.9</p>
+                    <p>Total Owners</p>
+                </div>
+                <div class="col divider">
+                    <p class="number counter">2.4</p>
+                    <p>Floor Price (ETH)</p>
+                </div>
+                <div class="col divider">
+                    <p class="number counter">144000</p>
+                    <p>Volumn Traded (ETH)</p>
+                </div>
+            </div>
+        </section>
+        <!-- Users Detail Section End -->
+
+        <!-- Legend Section Here -->
+
+        <div class=" legend-container">
+            <div class=" legend">
+                <img class="legend-img-1" src="imges/Untitled design (1).png" alt="" width="500px" height="500px">
+                <img class="legend-img-2" src="imges/Untitled design (1).png" alt="">
+            </div>
+            <div class=" legend-detail">
+                <div>
+                    <h2 class="legend-title fs-1 fw-bold mb-3">The Rise of Legends</h2>
+                    <div class="underline"></div>
+                    <p>As the first hero of the Meta Legends, collection has over 9,999 unique skins drawn from the
+                        different missions and challenges he faced throughout his life.</p>
+                    <p>The artwork has been hand-drawned by Robert Green in the traditional anime style and composited
+                        by Layla Efiyo.</p>
+                    <p>Curabitur pharetra velit eget dignissim varius. In vulputate elit at tortor pellentesque, non
+                        pulvinar neque consequat. Aenean tristique odio in libero tincidunt maximus. Nulla pharetra
+                        viverra dolor ut blandit. Cras finibus vel tortor eget lacinia. Pellentesque interdum elit non
+                        lacinia faucibus. Morbi nec felis auctor, tincidunt lacus sit amet, iaculis ipsum. Phasellus
+                        tempus sit amet justo et feugiat. Duis blandit semper lorem, egestas euismod ligula pharetra ac.
+                        Sed porta lorem eget neque bibendum, eget euismod justo mollis.</p>
+                    <p>Donec tristique porttitor sem, eget fermentum elit varius nec. Donec ut orci ipsum. Morbi
+                        efficitur felis eget dapibus fermentum. Phasellus sed tellus volutpat, hendrerit leo non,
+                        sollicitudin neque. Etiam ac lacus quam. Vivamus suscipit nisl tellus, at congue odio commodo
+                        at. Cras ante enim, sodales at pretium et, tempus at libero.</p>
+                    <button type="button" class="wallet-btn legend-btn">FIND US ON DISCORD</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Legend Section End -->
+
+        <!-- Mint Section Here -->
+        <section class="container mb-5 pb-5">
+            <div class="mint-container">
+                <div class="mint-detail">
+                    <h2 class="fs-1 fw-bold mb-3 mint-title">How To Mint</h2>
+                    <div class="underline"></div>
+                    <p>As the first hero of the Meta Legends, collection has over 9,999 unique skins drawn from the
+                        different missions and challenges he faced throughout his life.</p>
+                    <p>The artwork has been hand-drawned by Robert Green in the traditional anime style and composited
+                        by Layla Efiyo.</p>
+                    <p>Curabitur pharetra velit eget dignissim varius. In vulputate elit at tortor pellentesque, non
+                        pulvinar neque consequat. Aenean tristique odio in libero tincidunt maximus. Nulla pharetra
+                        viverra dolor ut blandit. Cras finibus vel tortor eget lacinia. Pellentesque interdum elit non
+                        lacinia faucibus. Morbi nec felis auctor, tincidunt lacus sit amet, iaculis ipsum. Phasellus
+                        tempus sit amet justo et feugiat. Duis blandit semper lorem, egestas euismod ligula pharetra ac.
+                        Sed porta lorem eget neque bibendum, eget euismod justo mollis.</p>
+                    <p>Donec tristique porttitor sem, eget fermentum elit varius nec. Donec ut orci ipsum. Morbi
+                        efficitur felis eget dapibus fermentum. Phasellus sed tellus volutpat, hendrerit leo non,
+                        sollicitudin neque. Etiam ac lacus quam. Vivamus suscipit nisl tellus, at congue odio commodo
+                        at. Cras ante enim, sodales at pretium et, tempus at libero.</p>
+                    <button type="button" class="wallet-btn mint-btn">How To Mint</button>
+                </div>
+                <div class="mint-detali-2">
+                    <div class="one d-flex gap-4">
+                        <div class="mint-des-1">
+                            <div class="one-detail">
+                                <p class="number">01</p>
+                                <p class="detail-title">Connect Your Wallet</p>
+                            </div>
+                        </div>
+                        <div class="mint-des-1">
+                            <div class="one-detail">
+                                <p class="number">02</p>
+                                <p class="detail-title">SELECT YOUR QUANTITY</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one d-flex gap-4 mt-4">
+                        <div class="mint-des-1">
+                            <div class="one-detail">
+                                <p class="number">03</p>
+                                <p class="detail-title">CONFIRM THE TRANSACTION</p>
+                            </div>
+                        </div>
+                        <div class="mint-des-1">
+                            <div class="one-detail">
+                                <p class="number">04</p>
+                                <p class="detail-title">RECEIVE YOUR NFT’S</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 video">
+                        <iframe class="video-content" width="560" height="500"
+                            src="https://www.youtube.com/embed/URVHRhBSjj8" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mint Section End -->
+
+        <!-- Divider All Here -->
+        <div class="devider-container mt-5 mb-5">
+            <span class="short me-3"></span>
+            <span class="long"></span>
+            <span class="short ms-3"></span>
+        </div>
+        <!-- Divider All End -->
+
+        <!-- Collection Section Here -->
+        <section class="container mt-5 py-5">
+            <h2 class="fs-1 fw-bold text-center mt-5 mb-5 py-5">OUR COLLECTION</h2>
+            <div class="collection-gallery mb-5">
+                <div class="gallery-one d-flex mb-3 justify-content-around align-items-end">
+                    <div class="gellary-img">
+                        <img class="img-one" src="imges/Collection-img/1.png" alt="" width="300px">
+                    </div>
+                    <div class="gellary-img">
+                        <img class="img-two" src="imges/Collection-img/5.png" alt="" width="200px">
+                    </div>
+                    <div class="gellary-img">
+                        <img class="img-three" src="imges/Collection-img/2.png" alt="" width="300px">
+                    </div>
+                    <div class="gellary-img">
+                        <img class="img-four" src="imges/Collection-img/6.png" alt="" width="200px">
+                    </div>
+                </div>
+                <div class="gallery-two d-flex justify-content-around align-items-start mt-5">
+                    <div class="gellary-img">
+                        <img class="img-five" src="imges/Collection-img/3.png" alt="" width="300px">
+                    </div>
+                    <div class="gellary-img">
+                        <img class="img-six" src="imges/Collection-img/7.png" alt="" width="200px">
+                    </div>
+                    <div class="gellary-img">
+                        <img class="img-seven" src="imges/Collection-img/4.png" alt="" width="300px">
+                    </div>
+                    <div class="gellary-img">
+                        <img class="img-eight" src="imges/Collection-img/8.png" alt="" width="200px">
+                    </div>
+                </div>
+            </div>
+            <p class="fs-5 text-center mt-5 py-5">Meta Legends represent a collection of 17,000 legends categorized by
+                level of <br> rarity and generated with hundreds of elements. The Legends are stored as ERC <br>-721
+                tokens on the Ethereum blockchain and hosted on IPFS.</p>
+            <div class="text-center">
+                <button type="button" class="wallet-btn collection-btn">SEE ALL COLLECTION</button>
+            </div>
+        </section>
+        <div class="devider-container mt-5 mb-5">
+            <span class="short me-3"></span>
+            <span class="long"></span>
+            <span class="short ms-3"></span>
+        </div>
+        <!-- Collection Section End -->
+
+        <!-- Roadmap Section Here -->
+        <section class="container mt-5 py-5">
+            <p class="fs-1 text-center mt-5 mb-5">ROADMAP</p>
+            <div class="map-img">
+
+            </div>
+            <div class="card-slider">
+                <div class="swiper map">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                        <div class="swiper-slide map-slider">
+                            <p class="fs-5">October 09, 2022</p>
+                            <p class="fs-3 text-white">Card Title</p>
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque aspernatur
+                                corrupti totam cumque quisquam ullam libero fuga veritatis harum, officia, eveniet
+                                laborum reprehenderit ratione commodi eum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="devider-container mt-5 mb-5">
+            <span class="short me-3"></span>
+            <span class="long"></span>
+            <span class="short ms-3"></span>
+        </div>
+        <!-- Roadmap Section End -->
+
+        <!-- Latest Article Section Here -->
+        <section class="container mt-5 py-5">
+            <p class="fs-1 article-title">LATEST ARTICLE</p>
+            <div class="article-container">
+                <div class="article-des-1">
+                    <p class="page-number">01</p>
+                    <p>August 09, 2022 / MetaVerse / 4 Comments</p>
+                    <p class="fw-bold fs-3"><a class="article-title-2" href="#">Reasons Why People Use Discord</a></p>
+                    <img src="imges/Collection-img/8.png" alt="" width="500px" height="500px">
+                    <p class="read-more"><a href="#">READ MORE</a></p>
+                </div>
+                <div class="article-des-2">
+                    <div class="page-2">
+                        <p class="page-number">02</p>
+                        <p>August 09, 2022 / MetaVerse / 4 Comments</p>
+                        <p class="fw-bold fs-3"><a class="article-title-2" href="#">Trial-By-Combat: The Death Cup</a>
+                        </p>
+                        <p class="read-more"><a href="#">READ MORE</a></p>
+                    </div>
+                    <div class="page-3">
+                        <p class="page-number">03</p>
+                        <p>August 09, 2022 / MetaVerse / 4 Comments</p>
+                        <p class="fw-bold fs-3"><a class="article-title-2" href="#">Graffiti Racer Research Center
+                                #10</a></p>
+                        <p class="read-more"><a href="#">READ MORE</a></p>
+                    </div>
+                    <div class="page-4">
+                        <p class="page-number">03</p>
+                        <p>August 09, 2022 / MetaVerse / 4 Comments</p>
+                        <p class="read-more"><a href="#">READ MORE</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="article-footer">
+                <button type="button" class="wallet-btn article-btn">READ ALL ARTICLE</button>
+                <p>We’re a team of creatives who are excited about unique ideas and create consectetur adipiscing elit.
+                    Etiam vitae purus a lectus semper.</p>
+            </div>
+        </section>
+        <div class="devider-container mt-5 mb-5">
+            <span class="short me-3"></span>
+            <span class="long"></span>
+            <span class="short ms-3"></span>
+        </div>
+        <!-- Latest Article Section End -->
+
+        <!-- Contact Section Here -->
+        <section class="container mt-5 py-5">
+            <p class="contact-title fs-1">CONTACT US</p>
+            <div class="contact-detail ">
+                <div class="contact-des">
+                    <p>Duis suscipit egestas ullamcorper. Cras porta nulla et tristique pellentesque. Praesent finibus
+                        mauris eu sollicitudin interdum. Morbi et blandit quam. Donec vitae massa purus. Curabitur nunc
+                        mauris, iaculis a nibh at, ultricies sodales dolor.</p>
+                    <p>Curabitur pharetra velit eget dignissim varius. In vulputate elit at tortor pellentesque, non
+                        pulvinar neque consequat.</p>
+                </div>
+                <div>
+                    <div>
+                        <p class="fw-bold">Phone</p>
+                        <p class="fs-2 contact-number"><a href="#">+0987654321</a></p>
+                    </div>
+                    <div>
+                        <p class="fw-bold mt-3">Email</p>
+                        <p class="fs-2 contact-email"><a href="#">example@gmail.com</a></p>
+                    </div>
+                </div>
+                <div>
+                    <p class="fw-bold">Office</p>
+                    <p class="fs-2 ">124 S Main St, <br> Scottville, MI 49454, <br> United States</p>
+                </div>
+            </div>
+            <div class="form-container">
+                <div class="name-email">
+                    <input class="name" type="text" placeholder="Your Name*" required>
+                    <input class="email" type="email" placeholder="Your Email*" required>
+                </div>
+                <div class="no-text">
+                    <input class="phone" type="number" placeholder="Your Phone(Optional)">
+                    <input class="text" type="text" placeholder="Topic(Optional)">
+                </div>
+                <textarea name="text" id="" cols="30" rows="10" placeholder="Your Massege"></textarea>
+            </div>
+            <div class="checkbox">
+                <input class="check" type="checkbox" name="check" id="">
+                <label for="check">I am okay with going emails and having that activity tracked to improve my
+                    exparience.</label>
+            </div>
+            <button type="button" class="wallet-btn mt-5 Massege-btn">Send Massege</button>
+        </section>
+        <!-- Contact Section End -->
+    </main>
+    <footer >
+       <div class="container footer-detail">
+        <p>Copyright 2022 — Designed & Developed by <a class="frenify" href="#">Frenify</a></p>
+        <div class="footer-link">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies</a>
+            <a href="#">Terms & Condition</a>
+        </div>
+       </div>
+
+    </footer>
+
+    <!-- JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome Script -->
+    <script src="https://kit.fontawesome.com/337002c4cc.js" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".banner", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 50,
+                depth: 0,
+                modifier: 3,
+                slideShadows: true,
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".map", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+</body>
+
+</html>
