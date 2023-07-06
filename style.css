@@ -133,6 +133,9 @@ nav a {
     border-radius: 0 !important;
     border: none;
 }
+.btn-close{
+    background-color: white;
+}
 @media screen and (max-width:576px) {
     .nav {
         display: flex;
@@ -326,7 +329,30 @@ padding: 20px;
 .number{
     background: none !important;
 }
-
+@media screen and (max-width:576px) {
+    .divider::after{
+        display: none;
+    }
+    .divider::before{
+        display: none;
+    }
+    .user-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    .divider::after{
+        display: none;
+    }
+    .divider::before{
+        display: none;
+    }
+    .user-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 /* Users Detail Section Style end */
 
