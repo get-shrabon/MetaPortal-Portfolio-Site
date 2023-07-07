@@ -334,7 +334,7 @@ padding: 20px;
         display: none;
     }
     .divider::before{
-        display: none;
+        display: none; 
     }
     .user-box{
         display: grid;
